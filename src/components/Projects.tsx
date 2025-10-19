@@ -49,13 +49,13 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
         rel="noopener noreferrer"
         className="group block h-full"
       >
-        <div className="relative h-full bg-card border border-border rounded-2xl overflow-hidden transition-all duration-500 hover:border-primary/50 hover:shadow-[0_20px_60px_-15px_hsl(var(--primary)/0.4)]">
+        <div className="relative h-full bg-card border border-border rounded-xl overflow-hidden transition-all duration-500 hover:border-primary/50 hover:shadow-[0_16px_48px_-12px_hsl(var(--primary)/0.35)]">
           {/* Image Container */}
-          <div className="relative w-full h-72 overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+          <div className="relative w-full h-52 overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
             <img 
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-50" />
             
@@ -64,9 +64,9 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
           </div>
 
           {/* Content */}
-          <div className="p-5 space-y-3">
-            <div className="space-y-1.5">
-              <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+          <div className="p-4 space-y-2.5">
+            <div className="space-y-1">
+              <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                 {project.title}
               </h3>
               
@@ -76,8 +76,8 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
             </div>
 
             {/* CTA */}
-            <div className="flex items-center gap-2 text-primary font-semibold pt-2 group-hover:gap-3 transition-all duration-300">
-              <span>Ver projeto</span>
+            <div className="flex items-center gap-2 text-primary font-semibold pt-1 group-hover:gap-3 transition-all duration-300">
+              <span className="text-sm">Ver projeto</span>
               <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
             </div>
           </div>

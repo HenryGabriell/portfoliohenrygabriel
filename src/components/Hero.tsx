@@ -27,7 +27,7 @@ const Hero = () => {
             <span>Full Stack Developer</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
             <span className="block text-foreground mb-4">Olá, eu sou</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent min-h-[1.2em]">
               {displayedText}
@@ -35,7 +35,7 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Transformo ideias em <span className="text-primary font-semibold">experiências digitais</span> modernas e performáticas
           </p>
 

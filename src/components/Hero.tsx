@@ -4,7 +4,7 @@ import { Code2, Sparkles } from "lucide-react";
 
 const Hero = () => {
   const { ref, isVisible } = useScrollReveal();
-  const { displayedText, isComplete } = useTypingAnimation("Henry Gabriel", 2500);
+  const { displayedText, isComplete } = useTypingAnimation("Transformo ideias em experiências digitais modernas e performáticas", 2500);
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-6 pt-4 pb-20">
@@ -23,14 +23,14 @@ const Hero = () => {
 
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
             <span className="block text-foreground mb-4">Olá, eu sou</span>
-            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent min-h-[1.2em]">
-              {displayedText}
-              {!isComplete && <span className="animate-pulse">|</span>}
+            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+              Henry Gabriel
             </span>
           </h1>
           
-          <p className="text-base md:text-xl lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Transformo ideias em <span className="text-primary font-semibold">experiências digitais</span> modernas e performáticas
+          <p className="text-base md:text-xl lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed min-h-[3em]">
+            {displayedText}
+            {!isComplete && <span className="animate-pulse">|</span>}
           </p>
 
           <div className="flex flex-wrap gap-6 justify-center pt-8">

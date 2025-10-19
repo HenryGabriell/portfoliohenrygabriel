@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-base md:text-xl lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed min-h-[3em]">
-            {displayedText}
+            Transformo ideias em <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent font-semibold">experiências digitais</span> modernas e performáticas
             {!isComplete && <span className="animate-pulse">|</span>}
           </p>
 

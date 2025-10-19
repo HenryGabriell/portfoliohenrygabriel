@@ -4,7 +4,7 @@ import { Code2, Sparkles } from "lucide-react";
 
 const Hero = () => {
   const { ref, isVisible } = useScrollReveal();
-  const { displayedText, isComplete } = useTypingAnimation("Transformo ideias em experiências digitais modernas e performáticas", 2500);
+  const { displayedText, isComplete } = useTypingAnimation("Transformo ideias em experiências digitais modernas e performáticas", 3000);
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-6 pt-4 pb-20">
@@ -21,7 +21,7 @@ const Hero = () => {
             <span>Full Stack Developer</span>
           </div>
 
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
             <span className="block text-foreground mb-4">Olá, eu sou</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Henry Gabriel
@@ -29,7 +29,14 @@ const Hero = () => {
           </h1>
           
           <p className="text-base md:text-xl lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed min-h-[3em]">
-            Transformo ideias em <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent font-semibold">experiências digitais</span> modernas e performáticas
+            {displayedText.split("experiências digitais").map((part, i, arr) => (
+              i === 0 ? (
+                <span key={i}>
+                  {part}
+                  {arr.length > 1 && <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent font-semibold">experiências digitais</span>}
+                </span>
+              ) : part
+            ))}
             {!isComplete && <span className="animate-pulse">|</span>}
           </p>
 

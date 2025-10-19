@@ -94,7 +94,7 @@ const Projects = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section className="py-40 px-6 bg-background" id="projects">
+    <section className="py-40 px-6" id="projects">
       <div className="max-w-6xl mx-auto">
         <div
           ref={ref}

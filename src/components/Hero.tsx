@@ -7,7 +7,7 @@ const Hero = () => {
   const { displayedText, isComplete } = useTypingAnimation("Henry Gabriel", 2500);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-6 pt-12 pb-20">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-6 pt-4 pb-20">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(250_95%_75%/0.15),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(280_85%_70%/0.15),transparent_50%)]" />

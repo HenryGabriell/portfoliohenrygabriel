@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 15% 8%;
-    --foreground: 220 10% 94%;
+    --background: 210 20% 98%;
+    --foreground: 220 15% 15%;
 
-    --card: 220 12% 11%;
-    --card-foreground: 220 10% 94%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
 
-    --popover: 220 12% 11%;
-    --popover-foreground: 220 10% 94%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 200 85% 55%;
-    --primary-foreground: 220 15% 8%;
+    --primary: 200 85% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 12% 18%;
-    --secondary-foreground: 220 10% 94%;
+    --secondary: 210 20% 92%;
+    --secondary-foreground: 220 15% 15%;
 
-    --muted: 220 12% 18%;
-    --muted-foreground: 220 10% 62%;
+    --muted: 210 20% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 170 75% 50%;
-    --accent-foreground: 220 15% 8%;
+    --accent: 170 75% 40%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 58%;
-    --destructive-foreground: 220 10% 94%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 12% 20%;
-    --input: 220 12% 20%;
-    --ring: 200 85% 55%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 200 85% 45%;
 
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(200 85% 55% / 0.12), hsl(170 75% 50% / 0.12));
-    --gradient-hero: linear-gradient(180deg, hsl(220 15% 8%) 0%, hsl(220 12% 11%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(200 85% 55% / 0.06), hsl(170 75% 50% / 0.06));
-    --shadow-glow: 0 0 40px hsl(200 85% 55% / 0.25);
-    --shadow-card: 0 8px 32px hsl(200 85% 55% / 0.15);
+    --gradient-primary: linear-gradient(135deg, hsl(200 85% 45% / 0.08), hsl(170 75% 40% / 0.08));
+    --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 20% 95%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(200 85% 45% / 0.04), hsl(170 75% 40% / 0.04));
+    --shadow-glow: 0 0 40px hsl(200 85% 45% / 0.2);
+    --shadow-card: 0 8px 32px hsl(200 85% 45% / 0.12);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

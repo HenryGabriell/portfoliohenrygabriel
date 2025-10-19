@@ -8,12 +8,16 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-6 pt-4 pb-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(250_95%_75%/0.15),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(280_85%_70%/0.15),transparent_50%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,hsl(200_85%_45%/0.15),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,hsl(170_75%_40%/0.15),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(200_85%_45%/0.05),transparent_70%)] animate-pulse" />
       
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+      <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-[pulse_4s_ease-in-out_infinite]" />
+      <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl animate-[pulse_4s_ease-in-out_infinite]" style={{ animationDelay: "2s" }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl animate-[pulse_6s_ease-in-out_infinite]" style={{ animationDelay: "1s" }} />
+      
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(220_15%_88%/0.3)_1px,transparent_1px),linear-gradient(to_bottom,hsl(220_15%_88%/0.3)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_60%,transparent_100%)]" />
       
       <div
         ref={ref}

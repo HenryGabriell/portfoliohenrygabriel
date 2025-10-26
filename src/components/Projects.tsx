@@ -8,7 +8,6 @@ import spotifyImg from "@/assets/ft-spotify.png";
 import loginImg from "@/assets/ft-login.png";
 import barberImg from "@/assets/ft-barber.png";
 import foodImg from "@/assets/ft-food.png";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const projects = [
   {
@@ -78,33 +77,18 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
         rel="noopener noreferrer"
         className="group block h-full"
       >
-        <div className="relative h-full bg-card rounded-xl overflow-hidden transition-all duration-500 hover:shadow-[0_16px_48px_-12px_hsl(var(--primary)/0.35)]">
+        <div className="relative h-full bg-card border border-border rounded-xl overflow-hidden transition-all duration-500 hover:border-primary/50 hover:shadow-[0_16px_48px_-12px_hsl(var(--primary)/0.35)]">
           {/* Image Container */}
-          <AspectRatio ratio={16 / 9}>
-            <div className="relative w-full h-full overflow-hidden">
-              {/* Blurred cover background to avoid visible borders while preserving image */}
-              <img
-                src={project.image}
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 w-full h-full object-cover scale-110 blur-md opacity-40"
-                loading="lazy"
-                decoding="async"
-              />
-
-              {/* Foreground image - never cropped */}
-              <img 
-                src={project.image}
-                alt={project.title}
-                loading="lazy"
-                decoding="async"
-                className="relative z-10 w-full h-full object-contain transition-[filter] duration-500 group-hover:brightness-110"
-              />
-
-              {/* Subtle hover tint */}
-              <div className="absolute inset-0 z-20 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
-          </AspectRatio>
+          <div className="relative w-full overflow-hidden">
+            <img 
+              src={project.image}
+              alt={project.title}
+              loading="lazy"
+              decoding="async"
+              className="block w-full h-auto transition-[filter] duration-500 group-hover:brightness-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
 
           {/* Content */}
           <div className="p-4 space-y-2.5">

@@ -24,7 +24,7 @@ const Contact = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a
-              href="mailto:contato@henrygabriel.dev"
+              href="mailto:contatohenrygabriel03@gmail.com"
               className="group flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:shadow-[0_0_30px_hsl(250_95%_75%/0.4)] transition-all duration-300 hover:scale-105"
             >
               <Mail className="w-5 h-5" />

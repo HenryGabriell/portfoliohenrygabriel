@@ -78,7 +78,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
         rel="noopener noreferrer"
         className="group block h-full"
       >
-        <div className="relative h-full bg-card border border-border rounded-xl overflow-hidden transition-all duration-500 hover:border-primary/50 hover:shadow-[0_16px_48px_-12px_hsl(var(--primary)/0.35)]">
+        <div className="relative h-full bg-card rounded-xl overflow-hidden transition-all duration-500 hover:shadow-[0_16px_48px_-12px_hsl(var(--primary)/0.35)]">
           {/* Image Container */}
           <AspectRatio ratio={16 / 9}>
             <div className="relative w-full h-full overflow-hidden">

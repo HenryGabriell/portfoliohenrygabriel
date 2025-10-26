@@ -3,6 +3,11 @@ import { ExternalLink } from "lucide-react";
 import sorriaMaisImg from "@/assets/sorriamais.png";
 import studioBittencourtImg from "@/assets/studiobittencourt.png";
 import casaDasMaquinasImg from "@/assets/casadasmaquinas.png";
+import twitterImg from "@/assets/ft-twitter.png";
+import spotifyImg from "@/assets/ft-spotify.png";
+import loginImg from "@/assets/ft-login.png";
+import barberImg from "@/assets/ft-barber.png";
+import foodImg from "@/assets/ft-food.png";
 import projetoGitHubImg from "@/assets/projetogithub.png";
 
 const projects = [
@@ -23,6 +28,36 @@ const projects = [
     description: "Website profissional para oficina que oferece serviço de manutenção de máquinas elétricas e manuais",
     url: "https://ws-casadasmaquinas.lovable.app",
     image: casaDasMaquinasImg,
+  },
+  {
+    title: "Clone Twitter",
+    description: "Interface clone do Twitter com design responsivo e funcionalidades interativas",
+    url: "https://henrygabriell.github.io/clone-twitter",
+    image: twitterImg,
+  },
+  {
+    title: "Clone Spotify",
+    description: "Recriação da interface do Spotify com layout moderno e responsivo",
+    url: "https://henrygabriell.github.io/Spotify",
+    image: spotifyImg,
+  },
+  {
+    title: "Tela de Login",
+    description: "Interface de login com design moderno e animações suaves",
+    url: "https://henrygabriell.github.io/Login",
+    image: loginImg,
+  },
+  {
+    title: "Barbearia",
+    description: "Website profissional para barbearia com design elegante e moderno",
+    url: "https://henrygabriell.github.io/site-barbearia",
+    image: barberImg,
+  },
+  {
+    title: "Restaurante",
+    description: "Website responsivo para restaurante com sistema de delivery",
+    url: "https://henrygabriell.github.io/restaurante-responsivo",
+    image: foodImg,
   },
   {
     title: "Projeto GitHub",
